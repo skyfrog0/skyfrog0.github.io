@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style type="text/css">  
+    body {
+        font: 14px Arial, Helvetica, Sans-Serif;
+        margin:50px 0px; 
+        padding:0px;
+        text-align:center;
+    }  
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0; 
+        padding: 0;
+    } 
+    .todo {
+        margin:0 auto;
+        width: 50%;
+        font-size: 20px;
+        color: #4EF;
+        -webkit-box-shadow:0 0 10px #0CC;  
+        -moz-box-shadow:0 0 10px #0CC;  
+        box-shadow:0 0 10px #0CC;  
+    }
+    div {
+        position: relative;
+        align: center;
+        color : #FFF;
+    }  
+    #container {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    #output {
+        width: 100%;
+        height: 100%;
+    }  
+  </style>
+  
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="js/vect.js"></script>
+    <script>
+        $(function(){            
+            var victor = new Victor("container", "output");	// 动态背景
+        });
+    </script>
+</head>
+
+<body>
+     <div id="container">
+        <div id="output"> </div>
+     </div>        
+     <div id="Text">
+        <h1>Hello page</h1>
+        <p><a id="myv" href="http://www.baidu.com">Link</a> It is on the fly :-)</p>
+        <p class="todo">More contents to be add ...</p>       
+    </div>
+    <script src="js/myv.js"></script>
+</body>
+</html>
